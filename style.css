@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --select : 5px solid #387ED1;
+    --color : #387ED1;
+}
+header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    /* background-color: #333; */
+}
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #000;
+    
+}
+.logo{
+    width: 50%;
+    /* background-color: green; */
+    margin: 0 4%;
+}
+.items{
+    width: 50%;
+}
+.items ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    width: 100%;
+    /* background-color: #333; */
+}
+
+.items ul a{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    margin: 0 8%;
+    position: relative;
+}
+
+.items ul a::after{
+    content: "";
+    
+    
+    
+    height: 2px;
+    width: 0%;
+    transition: .3s;
+    background-color:#000;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.items ul a:hover::after{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    
+    height: 110vh;
+    width: 100%;
+    
+
+}
+.selections{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    
+    width: 100%;
+    font-size: 5vh;
+    /* background-color: var(--color); */
+    
+    
+}
+.eq,.fo{
+    display: flex;
+    
+    align-items: center;
+    height: 100%;
+    margin: 0 2%;
+    width: fit-content;
+    color: #387ED1;
+    
+    
+    position: relative;
+}
+
+
+.eq:hover,.fo:hover{
+    color: #000;
+}
+
+
+
+.display{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    
+    
+
+}
+.intraday{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-right: 2px solid black;
+    /* background-color: green; */
+}
+.delivary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* border-right: 2px solid black; */
+    /* background-color: green; */
+}
+.intraday .intraday-calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    border: 1px solid rgb(0,0,0,0.5);
+}
+.delivary .delivary-calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    border: 1px solid rgb(0,0,0,0.5);
+}
+ .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: #142B42;
+}
+.radios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    
+    
+}
+.radios .nse,.bse{
+    margin: 0 2% ;
+}
+.quntity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+}
+.buy,.sell,.quntity-no{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green;    */
+    width: 33%;
+    height: 100%;
+    margin: 0 3px;
+}
+
+.buy input,.sell input,.quntity-no input{
+    width: 100%;
+    height: 100%;
+    
+}
+.turnover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 5%;
+} 
+.charges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(0,0,0,0.5);
+}
+.charges-lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    
+}
+.charges-lists ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: #000; */
+}
+ .charges-lists ul hr{
+width: 100%;
+}
+.charges-lists ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+    width: 90%;
+    list-style: none;
+    /* background-color: green; */
+}
+.profit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+.context{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    /* background-color: green; */
+}
+.context textarea{
+    display: flex;
+    
+    width: 50%;
+    height: 80%;
+    margin: 25px 0;
+
+}
+.context button{
+    width: 25%;
+    height: 40%;
+    border: 1px solid purple;
+    border-radius: 3px;
+    background-color: lightblue;
+    transition:  .1 ;
+}
+.context button:active{
+    transform: scale(.9);
+}
+textarea::placeholder{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    section{
+        height: 220vh;
+    }
+    .selections{
+        height: 5%;
+    }
+    .display{
+        flex-direction: column;
+        width: 100%;
+        height: 95%;
+
+       
+    }
+    .intraday{
+        height: 100%;
+        width: 100%;
+        border-right: none;
+        border-bottom:3px solid black;
+    }
+    .delivary{
+        width: 100%;
+    }
+    .intraday .intraday-calc{
+        width: 90%;
+        height: 100%;
+    }
+    .delivary .delivary-calc{
+        width: 90%;
+        height: 100%;
+
+    }
+    
+}

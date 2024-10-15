@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <title>Brokerage calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                PERSONAL
+            </div>
+            <div class="items">
+                <!-- <div class="list">
+                    <i></i>
+                </div> -->
+
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                   <a href="#"> <li>About</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="selections">
+            <div class="eq">
+                <span>Equity</span>
+            </div>
+            <span>|</span>
+            <div class="fo">
+                <span>F&O</span>
+            </div>
+        </div>
+        <hr>
+        <div class="display">
+            <div class="intraday">
+                <div class="intraday-calc">
+                        <div class="head">
+                            <h2>Intraday Equity</h2>
+                        </div>
+                        <div class="radios">
+                            <div class="nse">
+                                
+                                <input id="nse" name="same" type="radio" checked>
+                                    <label for="nse">NSE</label>
+                            </div>
+                            <div class="bse">
+                                <input id="bse" name="same" type="radio">
+                                <label for="bse">BSE</label>
+                            </div>
+                        </div>
+                        <div class="quntity">
+                            <div class="buy">
+                                <p>BUY</p>
+                                <input id="buy" type="number" min="0" value="100">
+
+                            </div>
+                            <div class="sell">
+                                <p>SELL</p>
+                                <input type="number" min="0" id="sell" value="100">
+                            </div>
+                            <div class="quntity-no">
+                                <p>QUNTITY</p>
+                                <input type="number" min="0" id="quntity" value="100">
+                            </div>
+                        </div>
+                        <div class="turnover">
+                            <p>Turnover</p><span id="turnover">20000</span>
+                        </div>
+                        <div class="charges">
+                            <p>Statutory charges *</p>
+                        </div>
+                        <div class="charges-lists">
+                            <ul>
+                                <li><p>STT total</p> <span id="stt">0</span></li>
+                                <hr>
+                                <li><p>Exchange txn charge</p> <span id="exchange">100000</span></li>
+                                <hr>
+                                <li><p>Clearing charge</p> <span id="clearing">100000</span></li>
+                                <hr>
+                                <li><p>GST </p> <span id="gst">100000</span></li>
+                                <hr>
+                                <li><p>SEBI charges</p> <span id="sebi">100000</span></li>
+                                <hr>
+                                <li><p>Stamp duty</p> <span id="stamp">100000</span></li>
+                                <hr>
+                                
+                                <li><p>Brokerage</p> <input type="number" max="20" min="0" value="0" id="brokerage"></li>
+                                <hr>
+                                <li><p>Total tax and charges</p> <span id="total_charges">100000</span></li>
+                                <hr>
+                                
+                            </ul>
+                        </div>
+                        <div class="profit">
+                                <h2>Net Profit </h2> <span id="profit" >100000</span>
+                        </div>
+
+                </div>
+                <div class="context">
+                    <textarea type="text-area" id="context" placeholder="suggestions"></textarea>
+                    <!-- <button class="submit">submit</button> -->
+                </div>
+            </div>
+            <div class="delivary">
+                <div class="delivary-calc">
+                    <div class="head">
+                        <h2>Delivary Equity</h2>
+                    </div>
+                    <div class="radios">
+                        <div class="nse">
+                            
+                            <input id="d_nse" name="same1" type="radio" checked>
+                                <label for="d_nse">NSE</label>
+                        </div>
+                        <div class="bse">
+                            <input id="d_bse" name="same1" type="radio">
+                            <label for="d_bse">BSE</label>
+                        </div>
+                    </div>
+                    <div class="quntity">
+                        <div class="buy">
+                            <p>BUY</p>
+                            <input id="buy_2" type="number" min="0" value="100">
+
+                        </div>
+                        <div class="sell">
+                            <p>SELL</p>
+                            <input type="number" min="0" id="sell_2" value="100">
+                        </div>
+                        <div class="quntity-no">
+                            <p>QUNTITY</p>
+                            <input type="number" id="quntity_2" min="0"value="100">
+                        </div>
+                    </div>
+                    <div class="turnover">
+                        <p>Turnover</p><span id="turnover_2">20000</span>
+                    </div>
+                    <div class="charges">
+                        <p>Statutory charges *</p>
+                    </div>
+                    <div class="charges-lists">
+                        <ul>
+                            <li><p>STT total</p> <span id="stt_2">100000</span></li>
+                            <hr>
+                            <li><p>Exchange txn charge</p> <span id="exchange_2">100000</span></li>
+                            <hr>
+                            <li><p id="dp">DP charges</p> <span id="clearing_2">100000</span></li>
+                            <hr>
+                            <li><p>GST</p> <span id="gst_2">100000</span></li>
+                            <hr>
+                            <li><p>SEBI charges</p> <span id="sebi_2">100000</span></li>
+                            <hr>
+                            <li><p>Stamp duty</p> <span id="stamp_2">100000</span></li>
+                            <hr>
+                          
+                            <li><p>Brokerage</p> <input type="number" max="20" min="0" value="0" readonly id="brokerage_2"></li>
+                                <hr>
+                            <li><p>Total tax and charges</p> <span id="total_charges_2">100000</span></li>
+                            <hr>
+                            
+                        </ul>
+                    </div>
+                    <div class="profit">
+                            <h2>Net Profit </h2> <span id="profit_2" >100000</span>
+                    </div>
+
+                </div>
+              <div class="context">
+                    <textarea type="text-area" id="context"  placeholder="suggestions"></textarea>
+                    <!-- <button class="submit">submit</button> -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
